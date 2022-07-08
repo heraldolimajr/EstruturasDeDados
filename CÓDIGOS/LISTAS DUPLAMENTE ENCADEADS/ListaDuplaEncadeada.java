@@ -68,8 +68,7 @@ public class ListaDuplaEncadeada {
 		}	
     }
     
-     public void removeDoInicio() {
-    	
+    public void removeDoInicio() {    	
     	if(this.totalDeElementos > 1) {
     		No novoInicio = this.inicio.getProximo();
     		novoInicio.setAnterior(null);
@@ -78,12 +77,7 @@ public class ListaDuplaEncadeada {
     		this.fim = null;
     		this.inicio = null;
     	}
-    	this.totalDeElementos--;
-    	
-    	
-    	if(this.totalDeElementos == 0) {
-    		this.fim = null;
-    	}
+    	this.totalDeElementos--;    	  	
     }
     
     public void removeDoFinal() {
@@ -91,15 +85,10 @@ public class ListaDuplaEncadeada {
 	    	No NovoFim = this.fim.getAnterior();
 	    	NovoFim.setProximo(null);
 	    	this.fim = this.fim.getAnterior();
+	    	this.totalDeElementos--;  
     	}
     	else {
-    		this.fim = null;
-    		this.inicio = null;
-    	}
-    	this.totalDeElementos--;
-    	
-    	if(this.totalDeElementos == 0) {
-    		this.fim = null;
+    		this.removeDoInicio();
     	}
     }
     
