@@ -68,7 +68,59 @@ public class ListaDuplaEncadeada {
 		}	
     }
     
+     public void removeDoInicio() {
+    	
+    	if(this.totalDeElementos > 1) {
+    		No novoInicio = this.inicio.getProximo();
+    		novoInicio.setAnterior(null);
+    		this.inicio = novoInicio;
+    	}else {
+    		this.fim = null;
+    		this.inicio = null;
+    	}
+    	this.totalDeElementos--;
+    	
+    	
+    	if(this.totalDeElementos == 0) {
+    		this.fim = null;
+    	}
+    }
     
+    public void removeDoFinal() {
+    	if(this.totalDeElementos > 1) {
+	    	No NovoFim = this.fim.getAnterior();
+	    	NovoFim.setProximo(null);
+	    	this.fim = this.fim.getAnterior();
+    	}
+    	else {
+    		this.fim = null;
+    		this.inicio = null;
+    	}
+    	this.totalDeElementos--;
+    	
+    	if(this.totalDeElementos == 0) {
+    		this.fim = null;
+    	}
+    }
+    
+    public void remove(int posicao) {
+    	if(this.posicaoValida(posicao)) {
+    		if(posicao == 0) {
+    			this.removeDoInicio();
+    		}else if(posicao == this.totalDeElementos-1) {
+    			this.removeDoFinal();
+    		}else {    		
+	    		No no = this.pegaNo(posicao);
+	    		No anterior = no.getAnterior();
+	    		No proximo = no.getProximo();	    		
+	    		anterior.setProximo(proximo);
+	    		proximo.setAnterior(anterior);	    		
+	    		this.totalDeElementos--;
+    		}
+    	}else{
+    		System.out.println("Posição inválida!");
+    	}
+    }
     
 	
     @Override
