@@ -1,3 +1,11 @@
+/*
+---------------------------------------------------------
+:: Prof. Heraldo GonÃ§alves Lima Junior
+:: Curso: Sistemas para a Internet
+:: Disciplina: Estruturas de Dados
+:: Contato: heraldo.junior@ifsertao-pe.edu.br
+---------------------------------------------------------
+*/
 import java.util.ArrayList;
 
 public class App {
@@ -10,7 +18,7 @@ public class App {
 		
 		vetor.adiciona("SALGUEIRO");
 		vetor.adiciona("SERRITA");
-		vetor.adiciona("CABROBÓ");
+		vetor.adiciona("CABROBÃ“");
 		vetor.adiciona("PETROLINA");
 		System.out.println("Inserindo novo elemento...");
 		vetor.adicionaPos(1,"RECIFE");
@@ -20,7 +28,7 @@ public class App {
 		if(pos > -1) {
 			vetor.remove(pos);
 		}else {
-			System.out.println("Posição inválida!");
+			System.out.println("PosiÃ§Ã£o invÃ¡lida!");
 		}
 		vetor.removeElemento("RECIFE");
 		
@@ -34,10 +42,10 @@ public class App {
 		if(vetor.verifica("PETROLINA")) {
 			System.out.println("Valor encontrado!");
 		}else {
-			System.out.println("Valor NÃO encontrado!");
+			System.out.println("Valor NÃƒO encontrado!");
 		}
 		
-		System.out.println("Qual a posição do elemento 'SERRITA'?"+vetor.verificaPos("SERRITA"));
+		System.out.println("Qual a posiÃ§Ã£o do elemento 'SERRITA'?"+vetor.verificaPos("SERRITA"));
 		
 		vetor.adicionaPos(1,"RECIFE");
 		System.out.println(vetor.imprime());*/
@@ -56,9 +64,9 @@ public class App {
 		
 		VetorObject vetorAlunos = new VetorObject(4);
 		
-		Aluno aluno = new Aluno(123, "João", "Sistemas para internet");
-		Aluno aluno2 = new Aluno(456, "Maria", "Física");
-		Aluno aluno3 = new Aluno(789, "Adão", "Alimentos");
+		Aluno aluno = new Aluno(123, "JoÃ£o", "Sistemas para internet");
+		Aluno aluno2 = new Aluno(456, "Maria", "FÃ­sica");
+		Aluno aluno3 = new Aluno(789, "AdÃ£o", "Alimentos");
 		Aluno aluno4 = new Aluno(1013, "Enzo", "Agronomia");
 		
 		vetorAlunos.adiciona(aluno);
@@ -70,8 +78,8 @@ public class App {
 		
 		
 		/*ArrayList<String> arrayList = new ArrayList();
-		arrayList.add("São Paulo");
-		arrayList.add("Aracajú");
+		arrayList.add("SÃ£o Paulo");
+		arrayList.add("AracajÃº");
 		arrayList.add("Rio");
 		
 		System.out.println(arrayList);
@@ -95,7 +103,7 @@ public class App {
 		//vetor.limpa();
 		//System.out.println("Lista vazia:");
 		//System.out.println(vetor.imprime());
-		System.out.println("Última ocorrência de SALGUEIRO: "+vetor.retornaIndice("SALGUEIRO"));
+		System.out.println("Ãšltima ocorrÃªncia de SALGUEIRO: "+vetor.retornaIndice("SALGUEIRO"));
 		vetor.removeOcorrencias("SALGUEIRO");
 		System.out.println(vetor.imprime());
 	}
