@@ -1,4 +1,11 @@
-
+/*
+---------------------------------------------------------
+:: Prof. Heraldo Gonçalves Lima Junior
+:: Curso: Sistemas para a Internet
+:: Disciplina: Estruturas de Dados
+:: Contato: heraldo.junior@ifsertao-pe.edu.br
+---------------------------------------------------------
+*/
 public class Pilha {
 	private No topo;
 	private int tamanho;
