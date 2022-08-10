@@ -44,6 +44,7 @@ public class Pilha {
 		return this.elementos[this.topo--];
 	}
 	
+	//RETORNA O ELEMENTO DO TOPO
 	public Object top() {
 		if (this.isEmpty()) return null;
 		return this.elementos[this.topo];
