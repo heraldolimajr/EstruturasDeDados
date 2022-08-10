@@ -1,3 +1,12 @@
+/*
+---------------------------------------------------------
+:: Prof. Heraldo GonÃ§alves Lima Junior
+:: Curso: Sistemas para a Internet
+:: Disciplina: Estruturas de Dados
+:: Contato: heraldo.junior@ifsertao-pe.edu.br
+---------------------------------------------------------
+*/
+
 import java.util.Arrays;
 
 public class Vetor {
@@ -76,7 +85,7 @@ public class Vetor {
 		try {
 			return this.elementos[posicao];
 		} catch (Exception e) {
-			return "Posição inválida do vetor!"; 
+			return "PosiÃ§Ã£o invÃ¡lida do vetor!"; 
 		}	
 	}
 	
@@ -100,7 +109,7 @@ public class Vetor {
 	/*
 	public boolean adicionaPos(int posicao, String elemento) {
 		if(!((posicao >= 0) && (posicao <= this.tamanho))) {
-			throw new IllegalArgumentException("Posição inválida!");
+			throw new IllegalArgumentException("PosiÃ§Ã£o invÃ¡lida!");
 		}
 		for(int i=this.tamanho-1; i>=posicao; i--) {
 			this.elementos[i+1] = this.elementos[i];
@@ -112,7 +121,7 @@ public class Vetor {
 	
 	public boolean adicionaPos(int posicao, String elemento) {		
 		if(!((posicao >= 0) && (posicao <= this.tamanho))) {
-			throw new IllegalArgumentException("Posição inválida!");
+			throw new IllegalArgumentException("PosiÃ§Ã£o invÃ¡lida!");
 		}		
 		if(this.tamanho == this.elementos.length) {
 			this.aumentaCapacidade();
@@ -137,7 +146,7 @@ public class Vetor {
 	
 	public void remove(int posicao) {
 		if(!(posicao >= 0) && (posicao<this.tamanho)) {
-			throw new IllegalArgumentException("Posição inválida!");
+			throw new IllegalArgumentException("PosiÃ§Ã£o invÃ¡lida!");
 		}
 		for(int i=posicao; i<tamanho-1;i++) {
 			this.elementos[i] = this.elementos[i+1];
@@ -156,8 +165,8 @@ public class Vetor {
 		}
 	}
 	
-	/*1. Crie uma operação na Lista, para isso, adicione um novo método. 
-	 * A nova operação deve limpar a lista, ou seja, remover todos os elementos.
+	/*1. Crie uma operaÃ§Ã£o na Lista, para isso, adicione um novo mÃ©todo. 
+	 * A nova operaÃ§Ã£o deve limpar a lista, ou seja, remover todos os elementos.
 	
 	public void removeTudo() {
 		for(int i=0; i<this.tamanho;i++) {
@@ -167,9 +176,9 @@ public class Vetor {
 	}
 	*/
 	
-	/*2. Implemente mais uma operação na Lista, adicionando um novo método. 
-	 * A nova operação deve procurar o índice da última ocorrência de um elemento 
-	 * passado como parâmetro.
+	/*2. Implemente mais uma operaÃ§Ã£o na Lista, adicionando um novo mÃ©todo. 
+	 * A nova operaÃ§Ã£o deve procurar o Ã­ndice da Ãºltima ocorrÃªncia de um elemento 
+	 * passado como parÃ¢metro.
 	 
 	
 	public int ultimaOcorrencia(String elemento) {
@@ -184,10 +193,10 @@ public class Vetor {
 	
 	*/
 	
-	/*3. Acrescente uma operação na classe Vetor, implemente um novo método. 
-	 * A nova operação deve remover da Lista todas as ocorrências de um elemento 
-	 * que é passado com parâmetro. Não esqueça de rearranjar os elementos do vetor 
-	 * após a remoção. 	 
+	/*3. Acrescente uma operaÃ§Ã£o na classe Vetor, implemente um novo mÃ©todo. 
+	 * A nova operaÃ§Ã£o deve remover da Lista todas as ocorrÃªncias de um elemento 
+	 * que Ã© passado com parÃ¢metro. NÃ£o esqueÃ§a de rearranjar os elementos do vetor 
+	 * apÃ³s a remoÃ§Ã£o. 	 
 	
 	public void removeOcorrencias(String elemento) {
 		boolean tem = true;
@@ -213,8 +222,8 @@ public class Vetor {
 	}
 	*/
 	
-	/* 1. Crie uma operação na Lista, para isso, 
-	 * adicione um novo método. A nova operação deve 
+	/* 1. Crie uma operaÃ§Ã£o na Lista, para isso, 
+	 * adicione um novo mÃ©todo. A nova operaÃ§Ã£o deve 
 	 * limpar a lista, ou seja, remover todos os 
 	 * elementos.
 	 */
@@ -225,10 +234,10 @@ public class Vetor {
     	}*/
     }
 	/*
-	2. Implemente mais uma operação na Lista, adicionando 
-	um novo método. A nova operação deve procurar o índice 
-	da última ocorrência de um elemento passado como 
-	parâmetro.*/
+	2. Implemente mais uma operaÃ§Ã£o na Lista, adicionando 
+	um novo mÃ©todo. A nova operaÃ§Ã£o deve procurar o Ã­ndice 
+	da Ãºltima ocorrÃªncia de um elemento passado como 
+	parÃ¢metro.*/
     
     public int retornaIndice(String elemento) {
     	/*for(int i=this.tamanho-1; i>=0; i--) {
@@ -247,11 +256,11 @@ public class Vetor {
     	return indice;
     }
 
-	//3. Acrescente uma operação na classe Vetor, 
-    //implemente um novo método. A nova operação deve 
-    //remover da Lista todas as ocorrências de um elemento 
-    //que é passado com parâmetro. Não esqueça de rearranjar 
-    //os elementos do vetor após a remoção.
+	//3. Acrescente uma operaÃ§Ã£o na classe Vetor, 
+    //implemente um novo mÃ©todo. A nova operaÃ§Ã£o deve 
+    //remover da Lista todas as ocorrÃªncias de um elemento 
+    //que Ã© passado com parÃ¢metro. NÃ£o esqueÃ§a de rearranjar 
+    //os elementos do vetor apÃ³s a remoÃ§Ã£o.
     
     public void removeOcorrencias(String elemento) {
     	for(int i=0; i<this.tamanho; i++) {
