@@ -1,4 +1,11 @@
-
+/*
+---------------------------------------------------------
+:: Prof. Heraldo Gon√ßalves Lima Junior
+:: Curso: Sistemas para a Internet
+:: Disciplina: Estruturas de Dados
+:: Contato: heraldo.junior@ifsertao-pe.edu.br
+---------------------------------------------------------
+*/
 public class App {
 
 	public static void main(String[] args) {
@@ -6,7 +13,7 @@ public class App {
 		ListaEncadeada lista = new ListaEncadeada();
 		lista.adicionaNoInicio("SALGUEIRO");
 		System.out.println(lista);
-		lista.adicionaNoInicio("CABROB”");
+		lista.adicionaNoInicio("CABROB√ì");
 		System.out.println(lista);
 
 		lista.adicionaNoFinal("PETROLINA");
@@ -28,7 +35,7 @@ public class App {
 		lista.removeDoFinal();
 		System.out.println(lista);
 
-		System.out.println("InÌcio:"+lista.getInicio().getElemento()+" - Fim:"+lista.getFim().getElemento());
+		System.out.println("In√≠cio:"+lista.getInicio().getElemento()+" - Fim:"+lista.getFim().getElemento());
 	}
 
 }
