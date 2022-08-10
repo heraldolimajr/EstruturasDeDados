@@ -1,4 +1,14 @@
 
+/*
+---------------------------------------------------------
+:: Webservice SOAP com PHP e NuSOAP
+:: Prof. Heraldo Gonçalves Lima Junior
+:: Curso: Sistemas para a Internet
+:: Disciplina: Sistemas Distribuídos
+:: Contato: heraldo.junior@ifsertao-pe.edu.br
+---------------------------------------------------------
+*/
+
 public class Pilha {
 	private Object elementos[];
 	private int topo;
