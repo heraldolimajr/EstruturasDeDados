@@ -1,4 +1,11 @@
-
+/*
+---------------------------------------------------------
+:: Prof. Heraldo Gon√ßalves Lima Junior
+:: Curso: Sistemas para a Internet
+:: Disciplina: Estruturas de Dados
+:: Contato: heraldo.junior@ifsertao-pe.edu.br
+---------------------------------------------------------
+*/
 public class ListaEncadeada {
 	private No inicio;
 	private No fim;
@@ -51,7 +58,7 @@ public class ListaEncadeada {
 	}
 	private No pegaNo (int posicao) {
 		if(!this.posicaoValida(posicao)) {
-			throw new IllegalArgumentException("PosiÁ„o In·lida!");
+			throw new IllegalArgumentException("Posi√ß√£o In√°lida!");
 		}
 		No atual = this.inicio;
 		for(int i = 0; i < posicao; i++) {
@@ -88,7 +95,7 @@ public class ListaEncadeada {
 	
 	public void removeDoFinal() {
 		if(this.totalDeElementos==0) {
-			System.out.println("Lista vazia! ImpossÌvel remover!");
+			System.out.println("Lista vazia! Imposs√≠vel remover!");
 		}else if(this.totalDeElementos==1){
 			this.removeDoInicio();
 		}else {		
