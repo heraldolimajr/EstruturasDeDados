@@ -1,3 +1,12 @@
+/*
+---------------------------------------------------------
+:: Prof. Heraldo Gonçalves Lima Junior
+:: Curso: Sistemas para a Internet
+:: Disciplina: Estruturas de Dados
+:: Contato: heraldo.junior@ifsertao-pe.edu.br
+---------------------------------------------------------
+*/
+
 import java.util.Arrays;
 
 public class VetorObject {
@@ -75,7 +84,7 @@ public class VetorObject {
 		try {
 			return this.elementos[posicao];
 		} catch (Exception e) {
-			return "Posi��o inv�lida do vetor!"; 
+			return "Posição inválida do vetor!"; 
 		}	
 	}
 	
@@ -99,7 +108,7 @@ public class VetorObject {
 	/*
 	public boolean adicionaPos(int posicao, Object elemento) {
 		if(!((posicao >= 0) && (posicao <= this.tamanho))) {
-			throw new IllegalArgumentException("Posi��o inv�lida!");
+			throw new IllegalArgumentException("Posição inválida!");
 		}
 		for(int i=this.tamanho-1; i>=posicao; i--) {
 			this.elementos[i+1] = this.elementos[i];
@@ -111,7 +120,7 @@ public class VetorObject {
 	
 	public boolean adicionaPos(int posicao, Object elemento) {		
 		if(!((posicao >= 0) && (posicao <= this.tamanho))) {
-			throw new IllegalArgumentException("Posi��o inv�lida!");
+			throw new IllegalArgumentException("Posição inválida!");
 		}		
 		if(this.tamanho == this.elementos.length) {
 			this.aumentaCapacidade();
@@ -136,7 +145,7 @@ public class VetorObject {
 	
 	public void remove(int posicao) {
 		if(!(posicao >= 0) && (posicao<this.tamanho)) {
-			throw new IllegalArgumentException("Posi��o inv�lida!");
+			throw new IllegalArgumentException("Posição inválida!");
 		}
 		for(int i=posicao; i<tamanho-1;i++) {
 			this.elementos[i] = this.elementos[i+1];
