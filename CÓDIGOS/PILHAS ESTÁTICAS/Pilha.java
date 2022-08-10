@@ -1,10 +1,9 @@
 
 /*
 ---------------------------------------------------------
-:: Webservice SOAP com PHP e NuSOAP
 :: Prof. Heraldo Gonçalves Lima Junior
 :: Curso: Sistemas para a Internet
-:: Disciplina: Sistemas Distribuídos
+:: Disciplina: Estruturas de Dados
 :: Contato: heraldo.junior@ifsertao-pe.edu.br
 ---------------------------------------------------------
 */
