@@ -105,6 +105,19 @@ public class ListaEncadeada {
 			this.totalDeElementos--;
 		}
 	}
+	
+	public boolean contem(Object elemento) {
+		No atual = this.inicio;
+		for(int i=0; i<this.totalDeElementos;i++) {
+			if(atual.getElemento().equals(elemento)) return true;
+			atual = atual.getProximo();
+		}
+		return false;
+	}
+	
+	public int tamanho() {
+		return this.totalDeElementos;
+	}
 
 	public No getInicio() {
 		return inicio;
