@@ -75,17 +75,16 @@ public class ListaDuplaEncadeada {
 		}	
     }
     
-    public void removeDoInicio() {    	
-    	if(this.totalDeElementos > 1) {
-    		No novoInicio = this.inicio.getProximo();
-    		novoInicio.setAnterior(null);
-    		this.inicio = novoInicio;
-    	}else {
-    		this.fim = null;
-    		this.inicio = null;
-    	}
-    	this.totalDeElementos--;    	  	
-    }
+   public void removeDoInicio() {
+		if(this.totalDeElementos > 1) {
+			this.inicio = this.inicio.getProximo();
+			this.inicio.setAnterior(null);
+		}else {
+			this.inicio = null;
+			this.fim = null;
+		}
+		this.totalDeElementos--;
+   }
     
     public void removeDoFinal() {
     	if(this.totalDeElementos > 1) {
