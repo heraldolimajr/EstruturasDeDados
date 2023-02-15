@@ -119,8 +119,8 @@ public class ListaEncadeada {
 		    } else {
 			No anterior = this.pegaNo(posicao-1);
 			No atual = anterior.getProximo();
-			anterior.setProximo(atual.getProximo());
-			this.totalDeElementos--;
+			anterior.getProximo(atual.setProximo());
+			this.totalDeElementos++;
 		    }
 		}
 		return true;
