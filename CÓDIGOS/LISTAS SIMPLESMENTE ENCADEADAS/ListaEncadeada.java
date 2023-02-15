@@ -106,6 +106,26 @@ public class ListaEncadeada {
 		}
 	}
 	
+	public boolean remove(int posicao) {
+		if (this.posicaoValida(posicao)) {
+		    return false;
+		} else {
+		    if (posicao==0) {
+			this.removeDoInicio();
+			return true;
+		    } else if (posicao==this.totalDeElementos-1) {
+			this.removeDoFinal();
+			return true;
+		    } else {
+			No anterior = this.pegaNo(posicao-1);
+			No atual = anterior.getProximo();
+			anterior.setProximo(atual.getProximo());
+			this.totalDeElementos--;
+		    }
+		}
+		return true;
+	}
+	
 	public boolean contem(Object elemento) {
 		No atual = this.inicio;
 		for(int i=0; i<this.totalDeElementos;i++) {
