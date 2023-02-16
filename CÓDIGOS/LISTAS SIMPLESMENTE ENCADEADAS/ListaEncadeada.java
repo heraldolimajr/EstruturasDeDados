@@ -106,7 +106,7 @@ public class ListaEncadeada {
 		}
 	}
 	
-	public boolean remove(int posicao) {
+	 public boolean remove(int posicao) {
 		if (this.posicaoValida(posicao)) {
 		    return false;
 		} else {
@@ -119,8 +119,8 @@ public class ListaEncadeada {
 		    } else {
 			No anterior = this.pegaNo(posicao-1);
 			No atual = anterior.getProximo();
-			anterior.getProximo(atual.setProximo());
-			this.totalDeElementos++;
+			anterior.setProximo(atual.getProximo());
+			this.totalDeElementos--;
 		    }
 		}
 		return true;
