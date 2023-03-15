@@ -119,20 +119,23 @@ public class Lista {
 		return true;
 	}*/
 	
-	public boolean adicionaPos(int posicao, String elemento) {		
-		if(!((posicao >= 0) && (posicao <= this.tamanho))) {
-			throw new IllegalArgumentException("Posição inválida!");
-		}		
-		if(this.tamanho == this.elementos.length) {
-			this.aumentaCapacidade();
-		}		
-		for(int i=this.tamanho-1; i>=posicao; i--) {
-			this.elementos[i+1] = this.elementos[i];
+	public boolean adicionaQualquerPosicao(int posicao, String elemento) {
+		try {
+			if(!elemento.equals(null)) {
+				for (int i = this.tamanho-1; i >= posicao; i--) {
+					this.elementos[i+1] = this.elementos[i];
+				}
+				this.elementos[posicao]=elemento;
+				this.tamanho++;
+				return true;			
+			}else {
+				return false;
+			}
+		} catch (Exception e) {
+			System.out.println("ERRO: "+e.getMessage());
+			return false;
 		}
-		this.elementos[posicao] = elemento;
-		this.tamanho++;
-		return true;
-	}	
+	}
 	
 	public void  aumentaCapacidade() {
 		if(this.tamanho==this.elementos.length) {
