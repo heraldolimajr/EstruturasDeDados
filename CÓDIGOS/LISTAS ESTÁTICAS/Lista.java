@@ -149,14 +149,16 @@ public class Lista {
 		this.elementos = elementosNovos;
 	}
 	
-	public void remove(int posicao) {
-		if(!(posicao >= 0) && (posicao<this.tamanho)) {
-			throw new IllegalArgumentException("Posição inválida!");
-		}
-		for(int i=posicao; i<tamanho-1;i++) {
-			this.elementos[i] = this.elementos[i+1];
-		}
-		this.tamanho--;	
+	public void remove(int posicao) {		
+		if((posicao >= 0) && (posicao < this.tamanho)) {
+			for(int i=posicao; i < this.tamanho; i++) {
+				this.elementos[i] = this.elementos[i+1];
+			}
+			this.tamanho--;
+		}else {
+			System.out.println("ERRO: Não foi possível remover no vetor.");
+			System.out.println("Posição inválida!");
+		}		
 	}
 	
 
