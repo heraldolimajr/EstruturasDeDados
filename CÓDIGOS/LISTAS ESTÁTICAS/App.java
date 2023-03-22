@@ -12,100 +12,50 @@ public class App {
 
 	public static void main(String[] args) {
 
-		/*Vetor vetor = new Vetor(4);
+			Lista lista = new Lista(5);		
+		System.out.println("Lista inicial: "+lista.imprime());
+		lista.adiciona("10");
+		lista.adiciona("20");
+		lista.adiciona("30");
+		System.out.println("Lista atual: "+lista.imprime());
+		System.out.println("Busca pela posição 2: "+lista.busca(5));
+		System.out.println("Verifica se 10 tá na lista: "+lista.verifica("10"));
+		System.out.println("Inserindo 100 na pos 10: "+lista.adicionaQualquerPosicao(0, "100"));
+		System.out.println("Nova lista: "+lista.imprime());
+		System.out.println("Inserindo NULL na pos 1: "+lista.adicionaQualquerPosicao(1, null));
+		System.out.println("Nova lista: "+lista.imprime());
+		System.out.println("Inserindo 200 na pos 1: "+lista.adicionaQualquerPosicao(1, "200"));
+		System.out.println("Nova lista: "+lista.imprime());
+
+		System.out.println("Inserindo 300 na pos 1: "+lista.adicionaQualquerPosicao(1, "300"));
+		System.out.println("Nova lista: "+lista.imprime());
+
+		System.out.println("Inserindo 400 na pos 7: "+lista.adicionaQualquerPosicao(7, "700"));
+		System.out.println("Nova lista: "+lista.imprime());
+		lista.remove(0);
+		System.out.println("Nova lista: "+lista.imprime());
+		lista.remove(4);
+		System.out.println("Nova lista: "+lista.imprime());
 		
-		System.out.println("Tamanho:"+vetor.tamanho());
-		
-		vetor.adiciona("SALGUEIRO");
-		vetor.adiciona("SERRITA");
-		vetor.adiciona("CABROBÓ");
-		vetor.adiciona("PETROLINA");
-		System.out.println("Inserindo novo elemento...");
-		vetor.adicionaPos(1,"RECIFE");
-		System.out.println(vetor.imprime());
-	
-		int pos = vetor.verificaPos("PETROLINA");
+		int pos = lista.verifica("10");
 		if(pos > -1) {
-			vetor.remove(pos);
+			lista.remove(pos);
 		}else {
-			System.out.println("Posição inválida!");
+			System.out.println("Impossível remover. Posição inválida!");
 		}
-		vetor.removeElemento("RECIFE");
+		System.out.println("Lista após a remoção do 10: "+lista.imprime());
 		
-		System.out.println(vetor.imprime());
-		
-		System.out.println("Tamanho:"+vetor.tamanho());
-		
-		System.out.println(vetor.imprime());
-		System.out.println("Buscando valor da pos[10]:"+vetor.busca(10));
-		
-		if(vetor.verifica("PETROLINA")) {
-			System.out.println("Valor encontrado!");
-		}else {
-			System.out.println("Valor NÃO encontrado!");
-		}
-		
-		System.out.println("Qual a posição do elemento 'SERRITA'?"+vetor.verificaPos("SERRITA"));
-		
-		vetor.adicionaPos(1,"RECIFE");
-		System.out.println(vetor.imprime());*/
+		//LISTA GENÉRICA
+		ListaObject listaGenerica = new ListaObject(5);
+		listaGenerica.adiciona(10);
+		listaGenerica.adicionaQualquerPosicao(0, "João");
+		listaGenerica.adicionaQualquerPosicao(1, true);
+		System.out.println("Lista atual: "+listaGenerica.imprime());
+		listaGenerica.remove(0);
+		System.out.println("Lista atual: "+listaGenerica.imprime());
+		System.out.println("Verificando se joão está na lista: "+listaGenerica.verifica(true));
 		
 		
-		/*
-		VetorObject vetor2 = new VetorObject(5);
-		
-		vetor2.adiciona("SALVADOR");
-		vetor2.adiciona(2.3);
-		vetor2.adiciona("BARREIRAS");
-		vetor2.adiciona(2);
-		vetor2.adiciona(true);
-		
-		System.out.println(vetor2.imprime());
-		
-		VetorObject vetorAlunos = new VetorObject(4);
-		
-		Aluno aluno = new Aluno(123, "João", "Sistemas para internet");
-		Aluno aluno2 = new Aluno(456, "Maria", "Física");
-		Aluno aluno3 = new Aluno(789, "Adão", "Alimentos");
-		Aluno aluno4 = new Aluno(1013, "Enzo", "Agronomia");
-		
-		vetorAlunos.adiciona(aluno);
-		vetorAlunos.adiciona(aluno2);
-		vetorAlunos.adiciona(aluno3);
-		vetorAlunos.adiciona(aluno4);
-		
-		System.out.println(vetorAlunos);*/
-		
-		
-		/*ArrayList<String> arrayList = new ArrayList();
-		arrayList.add("São Paulo");
-		arrayList.add("Aracajú");
-		arrayList.add("Rio");
-		
-		System.out.println(arrayList);
-		arrayList.add(1, "Porto Alegre");
-		System.out.println(arrayList);
-		System.out.println(arrayList.indexOf("Rio"));
-		System.out.println(arrayList.contains("Rio"));
-		System.out.println(arrayList.get(1));
-		arrayList.remove(3);
-		System.out.println(arrayList.size());*/
-		
-		Vetor vetor = new Vetor(6);		
-		
-		vetor.adiciona("SALGUEIRO");
-		vetor.adiciona("SERRITA");
-		vetor.adiciona("SALGUEIRO");
-		vetor.adiciona("PETROLINA");
-		vetor.adiciona("SALGUEIROS");
-		vetor.adiciona("SALGUEIRO");
-		System.out.println(vetor.imprime());
-		//vetor.limpa();
-		//System.out.println("Lista vazia:");
-		//System.out.println(vetor.imprime());
-		System.out.println("Última ocorrência de SALGUEIRO: "+vetor.retornaIndice("SALGUEIRO"));
-		vetor.removeOcorrencias("SALGUEIRO");
-		System.out.println(vetor.imprime());
 	}
 
 }
