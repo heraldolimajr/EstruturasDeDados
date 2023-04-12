@@ -93,11 +93,11 @@ public class ListaEncadeada {
 	}
 	
 	public void removeDoFinal() {
-		if(this.totalDeElementos==0) {
-			System.out.println("Lista vazia! Impossível remover!");
-		}else if(this.totalDeElementos==1){
-			this.removeDoInicio();
-		}else {		
+		if(this.getTotalDeElementos()==0) {
+			System.out.println("Lista vazia!");
+		}else if(this.totalDeElementos == 1) {
+			this.removeDoComeco();
+		}else {
 			No anterior = this.pegaNo(this.totalDeElementos-2);
 			anterior.setProximo(null);
 			this.fim = anterior;
