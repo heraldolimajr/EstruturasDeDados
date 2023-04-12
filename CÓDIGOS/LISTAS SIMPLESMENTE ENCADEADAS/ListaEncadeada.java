@@ -84,13 +84,12 @@ public class ListaEncadeada {
 		return this.pegaNo(posicao).getElemento();
 	}
 	
-	public void removeDoInicio() {
-		this.inicio = this.inicio.getProximo();
-		this.totalDeElementos--;
-		
-		if(this.totalDeElementos==0) {
-			this.fim = null;
+	public void removeDoComeco() {
+		if(this.totalDeElementos>0) {
+			this.inicio = this.inicio.getProximo();
+			this.totalDeElementos--;
 		}
+		if(this.totalDeElementos==0) this.fim = null;	
 	}
 	
 	public void removeDoFinal() {
