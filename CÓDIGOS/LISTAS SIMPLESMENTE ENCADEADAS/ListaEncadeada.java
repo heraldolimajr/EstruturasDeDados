@@ -106,23 +106,24 @@ public class ListaEncadeada {
 	}
 	
 	 public boolean remove(int posicao) {
-		if (this.posicaoValida(posicao)) {
-		    return false;
-		} else {
-		    if (posicao==0) {
-			this.removeDoInicio();
-			return true;
-		    } else if (posicao==this.totalDeElementos-1) {
-			this.removeDoFinal();
-			return true;
-		    } else {
-			No anterior = this.pegaNo(posicao-1);
-			No atual = anterior.getProximo();
-			anterior.setProximo(atual.getProximo());
-			this.totalDeElementos--;
-		    }
+		if(this.posicaoValida(posicao)) {
+			if(posicao == 0) {
+				this.removeDoComeco();
+				return true;
+			}else if(posicao == this.totalDeElementos-1) {
+				this.removeDoFinal();
+				return true;
+			}else {
+				No anterior  = this.pegaNo(posicao-1);
+				No atual = anterior.getProximo();
+				No proximo = atual.getProximo();
+				anterior.setProximo(proximo);
+				this.totalDeElementos--;
+				return true;
+			}
+		}else {
+			return false;
 		}
-		return true;
 	}
 	
 	public boolean contem(Object elemento) {
