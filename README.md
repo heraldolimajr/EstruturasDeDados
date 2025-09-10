@@ -18,16 +18,16 @@ Este repositório foi criado para:
 ## 📂 Estrutura do Repositório
 
 ```bash
-├── aulas/               # Slides e PDFs de apoio teórico
-├── src/                 # Implementações das estruturas em C/C++ e Python
-│   ├── listas/          # Listas encadeadas, circulares, duplas
-│   ├── pilhas/          # Pilhas e exemplos de uso
-│   ├── filas/           # Filas simples, circulares e de prioridade
-│   ├── arvores/         # Árvores binárias, AVL, B-trees
-│   ├── grafos/          # Representação e algoritmos (BFS, DFS, Dijkstra)
-│   └── ordenacao/       # Algoritmos de ordenação e busca
-├── exercicios/          # Listas de exercícios propostos e resolvidos
-├── projetos/            # Projetos práticos e trabalhos de avaliação
+├── CÓDIGOS/              # Implementações das estruturas em Java
+│   ├── FILAS ENCADEADAS/          
+│   ├── FILAS ESTÁTICAS/          
+│   ├── LISTAS DUPLAMENTE ENCADEADAS/
+│   ├── LISTAS ESTÁTICAS/         
+│   ├── LISTAS SIMPLESMENTE ENCADEADAS/ 
+│   ├── PILHAS ENCADEADAS/          
+│   ├── PILHAS ESTÁTICAS/         
+│   └── ÁRVORES/       
+├── SLIDES/              # Slides e PDFs de apoio teórico
 └── README.md            # Você está aqui!
 ```
 
