@@ -33,14 +33,10 @@ Este repositório foi criado para:
 
 ## 📚 Conteúdos
 
-- Listas: simples, duplas, circulares, com cabeça
-- Pilhas: implementação estática e dinâmica, casos de uso (parênteses balanceados)
-- Filas: simples, circulares, de prioridade
-- Árvores: binária, AVL, percursos, busca e inserção
-- Grafos: representação em matriz e lista de adjacência, BFS, DFS
-- Algoritmos de Ordenação: Bubble Sort, Insertion Sort, Selection Sort, Merge Sort, QuickSort
-- Algoritmos de Busca: Sequencial, Binária
-- Complexidade de Algoritmos: análise de tempo e espaço
+- Listas
+- Pilhas
+- Filas
+- Árvores
 
 ## 📜 Licença
 
