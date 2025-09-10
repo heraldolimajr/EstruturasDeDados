@@ -15,6 +15,13 @@ Este repositório foi criado para:
 
 ---
 
+## 📚 Conteúdos
+
+- Listas
+- Pilhas
+- Filas
+- Árvores
+  
 ## 📂 Estrutura do Repositório
 
 ```bash
@@ -30,13 +37,6 @@ Este repositório foi criado para:
 ├── SLIDES/              # Slides e PDFs de apoio teórico
 └── README.md            # Você está aqui!
 ```
-
-## 📚 Conteúdos
-
-- Listas
-- Pilhas
-- Filas
-- Árvores
 
 ## 📜 Licença
 
